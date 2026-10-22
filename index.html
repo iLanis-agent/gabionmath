@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gabion Math - gabion wall arithmetic</title>
+<style>
+  :root { --accent:#4a4f57; --ink:#1d1f24; --paper:#f5f5f4; --soft:#e3e3e0; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#6b6e75; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Gabion Math</h1>
+  <p class="lede">The wall of 36 ft by 3 ft with baskets of 3 ft by 1 ft takes 12 per course over 3 courses, 36 baskets in all.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    Gabion Math counts baskets and fill with multiplication and division: the baskets per course and the courses in a wall, the fill volume in cubic feet and yards, the stone tonnage at your density, and the cost of baskets plus stone. It applies the counting as written, so it has not seen your slope and does not know your soil bearing, your drainage, your tie-backs or your local wall rules, and it gives no verdict that a wall stands. Every number here is your own entry.
+  </div>
+  <p class="lede" style="font-size:1rem">Starting examples: a 36 ft run 3 ft tall in 3 ft by 1 ft baskets, 1.5 ft deep, stone at 1.4 tons a cubic yard, baskets at $25 and stone at $60 a ton.</p>
+  <section>
+    <h2>The baskets truth</h2>
+    <p>The wall of 36 ft by 3 ft with baskets of 3 ft by 1 ft takes 12 per course over 3 courses, 36 baskets in all.</p>
+  </section>
+  <section>
+    <h2>The fill truth</h2>
+    <p>The wall of 36 ft by 3 ft by 1.5 ft holds 162 cu ft, or 6 cu yd of fill.</p>
+  </section>
+  <section>
+    <h2>The stone and cost truths</h2>
+    <p>The fill of 6 cu yd at 1.4 tons per cubic yard takes 8.4 tons of stone, and the 36 baskets at $25 each with that stone at $60 a ton cost $1404.00 in all.</p>
+  </section>
+  <a class="btn" href="app.html">Run your numbers</a>
+  <footer>Gabion Math is exact arithmetic over the numbers you enter, nothing more.</footer>
+</body>
+</html>
