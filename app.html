@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gabion Math - app</title>
+<style>
+  :root { --accent:#4a4f57; --ink:#1d1f24; --paper:#f5f5f4; --soft:#e3e3e0; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #a8abb2; border-radius:6px; background:#fff; color:var(--ink); }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #a8abb2; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#6b6e75; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Gabion Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page counts baskets and fill with multiplication and division: the baskets per course and the courses in a wall, the fill volume in cubic feet and yards, the stone tonnage at your density, and the cost of baskets plus stone. The run, the height, the depth, the baskets and the prices are yours to measure or read off your own supplier's sheet. It applies the counting as written, so it has not seen your slope and does not know your soil bearing, your drainage, your tie-backs or your local wall rules, and it gives no verdict that a wall stands. Every number here is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The baskets truth</h2>
+    <p class="note">Baskets per course and courses: each rounded up, then multiplied.</p>
+    <div class="row2">
+      <div><label for="b-r">Wall run (ft)</label><input id="b-r" type="text" value="36"></div>
+      <div><label for="b-b">Basket length (ft)</label><input id="b-b" type="text" value="3"></div>
+    </div>
+    <div class="row2">
+      <div><label for="b-h">Wall height (ft)</label><input id="b-h" type="text" value="3"></div>
+      <div><label for="b-g">Basket height (ft)</label><input id="b-g" type="text" value="1"></div>
+    </div>
+    <div class="out" id="b-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The fill truth</h2>
+    <p class="note">Fill volume: run times height times depth, then yards of twenty-seven feet.</p>
+    <div class="row2">
+      <div><label for="v-r">Wall run (ft)</label><input id="v-r" type="text" value="36"></div>
+      <div><label for="v-h">Wall height (ft)</label><input id="v-h" type="text" value="3"></div>
+    </div>
+    <div class="row2">
+      <div><label for="v-d">Wall depth (ft)</label><input id="v-d" type="text" value="1.5"></div>
+    </div>
+    <div class="out" id="v-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The stone truth</h2>
+    <p class="note">Stone tonnage: the cubic yards times your supplier's density.</p>
+    <div class="row2">
+      <div><label for="s-y">Fill volume (cu yd)</label><input id="s-y" type="text" value="6"></div>
+      <div><label for="s-s">Stone density (tons per cu yd)</label><input id="s-s" type="text" value="1.4"></div>
+    </div>
+    <div class="out" id="s-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The cost truth</h2>
+    <p class="note">Cost: the baskets at their price plus the stone at its price.</p>
+    <div class="row2">
+      <div><label for="c-n">Baskets</label><input id="c-n" type="text" value="36"></div>
+      <div><label for="c-b">Basket price (dollars)</label><input id="c-b" type="text" value="25"></div>
+    </div>
+    <div class="row2">
+      <div><label for="c-t">Stone (tons)</label><input id="c-t" type="text" value="8.4"></div>
+      <div><label for="c-p">Stone price (dollars per ton)</label><input id="c-p" type="text" value="60"></div>
+    </div>
+    <div class="out" id="c-out"></div>
+  </div>
+
+  <footer>Gabion Math is exact arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("b-out", () => basketsTruth(v("b-r"), v("b-b"), v("b-h"), v("b-g")));
+    show("v-out", () => volumeTruth(v("v-r"), v("v-h"), v("v-d")));
+    show("s-out", () => stoneTruth(v("s-y"), v("s-s")));
+    show("c-out", () => costTruth(v("c-n"), v("c-b"), v("c-t"), v("c-p")));
+  }
+  document.querySelectorAll("input").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
