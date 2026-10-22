@@ -1,0 +1,979 @@
+{
+ "cases": [
+  {
+   "fn": "baskets",
+   "args": [
+    "36",
+    "3",
+    "3",
+    "1"
+   ],
+   "expect": "The wall of 36 ft by 3 ft with baskets of 3 ft by 1 ft takes 12 per course over 3 courses, 36 baskets in all."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "36",
+    "3",
+    "1.5"
+   ],
+   "expect": "The wall of 36 ft by 3 ft by 1.5 ft holds 162 cu ft, or 6 cu yd of fill."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "6",
+    "1.4"
+   ],
+   "expect": "The fill of 6 cu yd at 1.4 tons per cubic yard takes 8.4 tons of stone."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "36",
+    "25",
+    "8.4",
+    "60"
+   ],
+   "expect": "The 36 baskets at $25 each and 8.4 tons at $60 a ton cost $1404.00 in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "3130.29",
+    "2.43",
+    "15.98",
+    "2.3"
+   ],
+   "expect": "The wall of 3130.29 ft by 15.98 ft with baskets of 2.43 ft by 2.3 ft takes 1289 per course over 7 courses, 9023 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "2842.69",
+    "5.91",
+    "10.37",
+    "2.65"
+   ],
+   "expect": "The wall of 2842.69 ft by 10.37 ft with baskets of 5.91 ft by 2.65 ft takes 481 per course over 4 courses, 1924 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "4558.49",
+    "3.96",
+    "13.84",
+    "0.03"
+   ],
+   "expect": "The wall of 4558.49 ft by 13.84 ft with baskets of 3.96 ft by 0.03 ft takes 1152 per course over 462 courses, 532224 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "820.04",
+    "6.73",
+    "8.72",
+    "1.18"
+   ],
+   "expect": "The wall of 820.04 ft by 8.72 ft with baskets of 6.73 ft by 1.18 ft takes 122 per course over 8 courses, 976 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "2766.91",
+    "10.85",
+    "7.45",
+    "1.43"
+   ],
+   "expect": "The wall of 2766.91 ft by 7.45 ft with baskets of 10.85 ft by 1.43 ft takes 256 per course over 6 courses, 1536 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "3935.49",
+    "1.91",
+    "11.76",
+    "1.57"
+   ],
+   "expect": "The wall of 3935.49 ft by 11.76 ft with baskets of 1.91 ft by 1.57 ft takes 2061 per course over 8 courses, 16488 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "316.41",
+    "9.16",
+    "9.88",
+    "2.75"
+   ],
+   "expect": "The wall of 316.41 ft by 9.88 ft with baskets of 9.16 ft by 2.75 ft takes 35 per course over 4 courses, 140 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "7190.34",
+    "3.58",
+    "19.15",
+    "2.12"
+   ],
+   "expect": "The wall of 7190.34 ft by 19.15 ft with baskets of 3.58 ft by 2.12 ft takes 2009 per course over 10 courses, 20090 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "5848.49",
+    "0.26",
+    "15.88",
+    "1.85"
+   ],
+   "expect": "The wall of 5848.49 ft by 15.88 ft with baskets of 0.26 ft by 1.85 ft takes 22495 per course over 9 courses, 202455 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "549.62",
+    "11.09",
+    "3.62",
+    "1.22"
+   ],
+   "expect": "The wall of 549.62 ft by 3.62 ft with baskets of 11.09 ft by 1.22 ft takes 50 per course over 3 courses, 150 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "973.1",
+    "4.37",
+    "19.51",
+    "0.11"
+   ],
+   "expect": "The wall of 973.1 ft by 19.51 ft with baskets of 4.37 ft by 0.11 ft takes 223 per course over 178 courses, 39694 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "6673.57",
+    "3.7",
+    "11.78",
+    "2.88"
+   ],
+   "expect": "The wall of 6673.57 ft by 11.78 ft with baskets of 3.7 ft by 2.88 ft takes 1804 per course over 5 courses, 9020 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "6192.87",
+    "11.48",
+    "9.93",
+    "0.85"
+   ],
+   "expect": "The wall of 6192.87 ft by 9.93 ft with baskets of 11.48 ft by 0.85 ft takes 540 per course over 12 courses, 6480 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "2471.44",
+    "11.21",
+    "18.95",
+    "0.12"
+   ],
+   "expect": "The wall of 2471.44 ft by 18.95 ft with baskets of 11.21 ft by 0.12 ft takes 221 per course over 158 courses, 34918 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "992.66",
+    "9.51",
+    "16.35",
+    "2.7"
+   ],
+   "expect": "The wall of 992.66 ft by 16.35 ft with baskets of 9.51 ft by 2.7 ft takes 105 per course over 7 courses, 735 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "9263.52",
+    "6.54",
+    "17.23",
+    "1.69"
+   ],
+   "expect": "The wall of 9263.52 ft by 17.23 ft with baskets of 6.54 ft by 1.69 ft takes 1417 per course over 11 courses, 15587 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "3581.74",
+    "9.51",
+    "14.96",
+    "0.53"
+   ],
+   "expect": "The wall of 3581.74 ft by 14.96 ft with baskets of 9.51 ft by 0.53 ft takes 377 per course over 29 courses, 10933 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "5588.6",
+    "3.59",
+    "1.3",
+    "0.91"
+   ],
+   "expect": "The wall of 5588.6 ft by 1.3 ft with baskets of 3.59 ft by 0.91 ft takes 1557 per course over 2 courses, 3114 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "9634.59",
+    "10.71",
+    "4.78",
+    "2.56"
+   ],
+   "expect": "The wall of 9634.59 ft by 4.78 ft with baskets of 10.71 ft by 2.56 ft takes 900 per course over 2 courses, 1800 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "8780.75",
+    "9.26",
+    "4.54",
+    "2.82"
+   ],
+   "expect": "The wall of 8780.75 ft by 4.54 ft with baskets of 9.26 ft by 2.82 ft takes 949 per course over 2 courses, 1898 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "1303.14",
+    "2.51",
+    "11.74",
+    "1.09"
+   ],
+   "expect": "The wall of 1303.14 ft by 11.74 ft with baskets of 2.51 ft by 1.09 ft takes 520 per course over 11 courses, 5720 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "6659.64",
+    "9.5",
+    "9.04",
+    "0.74"
+   ],
+   "expect": "The wall of 6659.64 ft by 9.04 ft with baskets of 9.5 ft by 0.74 ft takes 702 per course over 13 courses, 9126 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "162.68",
+    "10.1",
+    "10.68",
+    "0.52"
+   ],
+   "expect": "The wall of 162.68 ft by 10.68 ft with baskets of 10.1 ft by 0.52 ft takes 17 per course over 21 courses, 357 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "5443.34",
+    "3.47",
+    "4.81",
+    "1.21"
+   ],
+   "expect": "The wall of 5443.34 ft by 4.81 ft with baskets of 3.47 ft by 1.21 ft takes 1569 per course over 4 courses, 6276 baskets in all."
+  },
+  {
+   "fn": "baskets",
+   "args": [
+    "9282.47",
+    "6.01",
+    "5.98",
+    "0.34"
+   ],
+   "expect": "The wall of 9282.47 ft by 5.98 ft with baskets of 6.01 ft by 0.34 ft takes 1545 per course over 18 courses, 27810 baskets in all."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "8836.07",
+    "12.27",
+    "5.37"
+   ],
+   "expect": "The wall of 8836.07 ft by 12.27 ft by 5.37 ft holds 582207.77 cu ft, or 21563.25 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "1863.81",
+    "6.16",
+    "6.09"
+   ],
+   "expect": "The wall of 1863.81 ft by 6.16 ft by 6.09 ft holds 69919.71 cu ft, or 2589.62 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "8487.86",
+    "17.71",
+    "2.91"
+   ],
+   "expect": "The wall of 8487.86 ft by 17.71 ft by 2.91 ft holds 437431.2 cu ft, or 16201.16 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "6109.15",
+    "5.07",
+    "7.22"
+   ],
+   "expect": "The wall of 6109.15 ft by 5.07 ft by 7.22 ft holds 223627.88 cu ft, or 8282.51 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "1341.37",
+    "17.06",
+    "4.69"
+   ],
+   "expect": "The wall of 1341.37 ft by 17.06 ft by 4.69 ft holds 107324.89 cu ft, or 3975 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "1943.64",
+    "10.39",
+    "7.37"
+   ],
+   "expect": "The wall of 1943.64 ft by 10.39 ft by 7.37 ft holds 148832.87 cu ft, or 5512.33 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "7432.04",
+    "2.01",
+    "2.84"
+   ],
+   "expect": "The wall of 7432.04 ft by 2.01 ft by 2.84 ft holds 42425.06 cu ft, or 1571.3 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "9789.98",
+    "8.63",
+    "2.03"
+   ],
+   "expect": "The wall of 9789.98 ft by 8.63 ft by 2.03 ft holds 171509.68 cu ft, or 6352.21 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "2554.33",
+    "19.2",
+    "6.03"
+   ],
+   "expect": "The wall of 2554.33 ft by 19.2 ft by 6.03 ft holds 295730.11 cu ft, or 10952.97 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "8086.04",
+    "5.62",
+    "6.12"
+   ],
+   "expect": "The wall of 8086.04 ft by 5.62 ft by 6.12 ft holds 278114.49 cu ft, or 10300.54 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "5475.36",
+    "1.47",
+    "8.61"
+   ],
+   "expect": "The wall of 5475.36 ft by 1.47 ft by 8.61 ft holds 69299.99 cu ft, or 2566.67 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "2605.05",
+    "6.71",
+    "9.96"
+   ],
+   "expect": "The wall of 2605.05 ft by 6.71 ft by 9.96 ft holds 174099.66 cu ft, or 6448.14 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "3630.16",
+    "13.33",
+    "6.56"
+   ],
+   "expect": "The wall of 3630.16 ft by 13.33 ft by 6.56 ft holds 317438.62 cu ft, or 11756.99 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "8978.83",
+    "1.83",
+    "3.83"
+   ],
+   "expect": "The wall of 8978.83 ft by 1.83 ft by 3.83 ft holds 62931.72 cu ft, or 2330.8 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "716.35",
+    "0.06",
+    "1.62"
+   ],
+   "expect": "The wall of 716.35 ft by 0.06 ft by 1.62 ft holds 69.63 cu ft, or 2.58 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "527.32",
+    "7.47",
+    "4.98"
+   ],
+   "expect": "The wall of 527.32 ft by 7.47 ft by 4.98 ft holds 19616.62 cu ft, or 726.54 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "9394.73",
+    "17.14",
+    "8.41"
+   ],
+   "expect": "The wall of 9394.73 ft by 17.14 ft by 8.41 ft holds 1354225.9 cu ft, or 50156.51 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "1227.55",
+    "16.36",
+    "8.88"
+   ],
+   "expect": "The wall of 1227.55 ft by 16.36 ft by 8.88 ft holds 178334.54 cu ft, or 6604.98 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "8417.33",
+    "15.79",
+    "2.72"
+   ],
+   "expect": "The wall of 8417.33 ft by 15.79 ft by 2.72 ft holds 361514.22 cu ft, or 13389.42 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "8459.15",
+    "16.04",
+    "9.13"
+   ],
+   "expect": "The wall of 8459.15 ft by 16.04 ft by 9.13 ft holds 1238801.91 cu ft, or 45881.55 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "4044.24",
+    "14.67",
+    "8.65"
+   ],
+   "expect": "The wall of 4044.24 ft by 14.67 ft by 8.65 ft holds 513195.86 cu ft, or 19007.25 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "75.84",
+    "11.25",
+    "7.24"
+   ],
+   "expect": "The wall of 75.84 ft by 11.25 ft by 7.24 ft holds 6177.17 cu ft, or 228.78 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "7881.94",
+    "10.49",
+    "6.81"
+   ],
+   "expect": "The wall of 7881.94 ft by 10.49 ft by 6.81 ft holds 563061.36 cu ft, or 20854.12 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "7326.33",
+    "17.72",
+    "4.56"
+   ],
+   "expect": "The wall of 7326.33 ft by 17.72 ft by 4.56 ft holds 591990.91 cu ft, or 21925.59 cu yd of fill."
+  },
+  {
+   "fn": "volume",
+   "args": [
+    "3133.64",
+    "10.44",
+    "1.3"
+   ],
+   "expect": "The wall of 3133.64 ft by 10.44 ft by 1.3 ft holds 42529.76 cu ft, or 1575.18 cu yd of fill."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "618276.04",
+    "0.76"
+   ],
+   "expect": "The fill of 618276.04 cu yd at 0.76 tons per cubic yard takes 469889.79 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "515842.74",
+    "1.75"
+   ],
+   "expect": "The fill of 515842.74 cu yd at 1.75 tons per cubic yard takes 902724.8 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "457884.25",
+    "1.37"
+   ],
+   "expect": "The fill of 457884.25 cu yd at 1.37 tons per cubic yard takes 627301.42 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "605556.63",
+    "1.21"
+   ],
+   "expect": "The fill of 605556.63 cu yd at 1.21 tons per cubic yard takes 732723.52 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "38231.25",
+    "0.17"
+   ],
+   "expect": "The fill of 38231.25 cu yd at 0.17 tons per cubic yard takes 6499.31 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "254826.71",
+    "0.46"
+   ],
+   "expect": "The fill of 254826.71 cu yd at 0.46 tons per cubic yard takes 117220.29 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "606655.4",
+    "1.59"
+   ],
+   "expect": "The fill of 606655.4 cu yd at 1.59 tons per cubic yard takes 964582.09 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "373743.34",
+    "2.68"
+   ],
+   "expect": "The fill of 373743.34 cu yd at 2.68 tons per cubic yard takes 1001632.15 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "809209.13",
+    "2.46"
+   ],
+   "expect": "The fill of 809209.13 cu yd at 2.46 tons per cubic yard takes 1990654.46 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "315381.94",
+    "0.69"
+   ],
+   "expect": "The fill of 315381.94 cu yd at 0.69 tons per cubic yard takes 217613.54 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "440809.47",
+    "2.79"
+   ],
+   "expect": "The fill of 440809.47 cu yd at 2.79 tons per cubic yard takes 1229858.42 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "52062.51",
+    "0.33"
+   ],
+   "expect": "The fill of 52062.51 cu yd at 0.33 tons per cubic yard takes 17180.63 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "929794.3",
+    "2.44"
+   ],
+   "expect": "The fill of 929794.3 cu yd at 2.44 tons per cubic yard takes 2268698.09 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "867356.3",
+    "2.23"
+   ],
+   "expect": "The fill of 867356.3 cu yd at 2.23 tons per cubic yard takes 1934204.55 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "291636.73",
+    "1.04"
+   ],
+   "expect": "The fill of 291636.73 cu yd at 1.04 tons per cubic yard takes 303302.2 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "927269.45",
+    "2.4"
+   ],
+   "expect": "The fill of 927269.45 cu yd at 2.4 tons per cubic yard takes 2225446.68 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "639360.43",
+    "0.07"
+   ],
+   "expect": "The fill of 639360.43 cu yd at 0.07 tons per cubic yard takes 44755.23 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "213805.66",
+    "2.55"
+   ],
+   "expect": "The fill of 213805.66 cu yd at 2.55 tons per cubic yard takes 545204.43 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "171949.68",
+    "1.42"
+   ],
+   "expect": "The fill of 171949.68 cu yd at 1.42 tons per cubic yard takes 244168.55 tons of stone."
+  },
+  {
+   "fn": "stone",
+   "args": [
+    "914671.86",
+    "1.31"
+   ],
+   "expect": "The fill of 914671.86 cu yd at 1.31 tons per cubic yard takes 1198220.14 tons of stone."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "22712",
+    "196.06",
+    "11895.32",
+    "753.13"
+   ],
+   "expect": "The 22712 baskets at $196.06 each and 11895.32 tons at $753.13 a ton cost $13411637.07 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "43862",
+    "20.98",
+    "28639.03",
+    "550.23"
+   ],
+   "expect": "The 43862 baskets at $20.98 each and 28639.03 tons at $550.23 a ton cost $16678278.24 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "77151",
+    "70.62",
+    "3591.07",
+    "178.06"
+   ],
+   "expect": "The 77151 baskets at $70.62 each and 3591.07 tons at $178.06 a ton cost $6087829.54 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "90776",
+    "893.59",
+    "76108.29",
+    "568.66"
+   ],
+   "expect": "The 90776 baskets at $893.59 each and 76108.29 tons at $568.66 a ton cost $124396266.03 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "19620",
+    "656.65",
+    "84107.1",
+    "807.69"
+   ],
+   "expect": "The 19620 baskets at $656.65 each and 84107.1 tons at $807.69 a ton cost $80815936.60 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "8928",
+    "304.55",
+    "92401.99",
+    "430.37"
+   ],
+   "expect": "The 8928 baskets at $304.55 each and 92401.99 tons at $430.37 a ton cost $42486066.84 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "94722",
+    "56.77",
+    "64804.33",
+    "17.74"
+   ],
+   "expect": "The 94722 baskets at $56.77 each and 64804.33 tons at $17.74 a ton cost $6526996.75 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "78899",
+    "475.85",
+    "77669.6",
+    "61.05"
+   ],
+   "expect": "The 78899 baskets at $475.85 each and 77669.6 tons at $61.05 a ton cost $42285818.23 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "52932",
+    "452.08",
+    "10438.34",
+    "204.13"
+   ],
+   "expect": "The 52932 baskets at $452.08 each and 10438.34 tons at $204.13 a ton cost $26060276.90 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "55526",
+    "93.68",
+    "61723.78",
+    "158.63"
+   ],
+   "expect": "The 55526 baskets at $93.68 each and 61723.78 tons at $158.63 a ton cost $14992918.90 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "80951",
+    "847.42",
+    "73652.39",
+    "744.98"
+   ],
+   "expect": "The 80951 baskets at $847.42 each and 73652.39 tons at $744.98 a ton cost $123469053.92 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "78770",
+    "41.26",
+    "95866.7",
+    "865.99"
+   ],
+   "expect": "The 78770 baskets at $41.26 each and 95866.7 tons at $865.99 a ton cost $86269653.73 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "45434",
+    "383.11",
+    "668.81",
+    "99.66"
+   ],
+   "expect": "The 45434 baskets at $383.11 each and 668.81 tons at $99.66 a ton cost $17472873.34 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "95476",
+    "963.46",
+    "50709.74",
+    "213.29"
+   ],
+   "expect": "The 95476 baskets at $963.46 each and 50709.74 tons at $213.29 a ton cost $102803187.40 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "15104",
+    "879.48",
+    "67723.75",
+    "742.1"
+   ],
+   "expect": "The 15104 baskets at $879.48 each and 67723.75 tons at $742.1 a ton cost $63541460.80 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "65242",
+    "689.8",
+    "29003.5",
+    "0.36"
+   ],
+   "expect": "The 65242 baskets at $689.8 each and 29003.5 tons at $0.36 a ton cost $45014372.86 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "75725",
+    "60.05",
+    "80179.99",
+    "407.09"
+   ],
+   "expect": "The 75725 baskets at $60.05 each and 80179.99 tons at $407.09 a ton cost $37187758.38 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "58048",
+    "618.15",
+    "62368.71",
+    "285.76"
+   ],
+   "expect": "The 58048 baskets at $618.15 each and 62368.71 tons at $285.76 a ton cost $53704853.77 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "35541",
+    "62.45",
+    "36847.1",
+    "73.29"
+   ],
+   "expect": "The 35541 baskets at $62.45 each and 36847.1 tons at $73.29 a ton cost $4920059.41 in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "76143",
+    "222.17",
+    "26975.85",
+    "509.3"
+   ],
+   "expect": "The 76143 baskets at $222.17 each and 26975.85 tons at $509.3 a ton cost $30655490.72 in all."
+  }
+ ],
+ "errors": [
+  [
+   "baskets",
+   [
+    "0",
+    "3",
+    "3",
+    "1"
+   ]
+  ],
+  [
+   "baskets",
+   [
+    "36",
+    "0",
+    "3",
+    "1"
+   ]
+  ],
+  [
+   "baskets",
+   [
+    "36",
+    "3",
+    "0",
+    "1"
+   ]
+  ],
+  [
+   "baskets",
+   [
+    "36",
+    "3",
+    "3",
+    "0"
+   ]
+  ],
+  [
+   "baskets",
+   [
+    "2",
+    "3",
+    "3",
+    "1"
+   ]
+  ],
+  [
+   "baskets",
+   [
+    "36",
+    "3",
+    "0.5",
+    "1"
+   ]
+  ],
+  [
+   "volume",
+   [
+    "0",
+    "3",
+    "1.5"
+   ]
+  ],
+  [
+   "volume",
+   [
+    "36",
+    "0",
+    "1.5"
+   ]
+  ],
+  [
+   "volume",
+   [
+    "36",
+    "3",
+    "0"
+   ]
+  ],
+  [
+   "stone",
+   [
+    "0",
+    "1.4"
+   ]
+  ],
+  [
+   "stone",
+   [
+    "6",
+    "0"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "0",
+    "25",
+    "8.4",
+    "60"
+   ]
+  ]
+ ]
+}
